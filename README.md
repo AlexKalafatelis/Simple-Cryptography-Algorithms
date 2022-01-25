@@ -1,6 +1,6 @@
 # Simple Cryptography Algorithms
 
-Analysis of basic cryptography algoritms for a university course 
+Analysis of basic cryptographic algoritms for a university course 
 
 ## A. Ceasar's Cipher 
 
