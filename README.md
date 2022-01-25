@@ -1,4 +1,4 @@
-# Simpe-Cryptography-Algorithms
+# Simple-Cryptography-Algorithms
 
 A. Ceasar's Cipher 
 
