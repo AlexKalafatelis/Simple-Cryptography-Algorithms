@@ -57,6 +57,6 @@ Given a plaintext P, represented as a number, the ciphertext C is calculated as:
 3. Decryption
 Using the private key (n,d), the plaintext can be found using:
 
-P = C^{d} mod n
+- P = C^{d} mod n
 
 [4](https://www.educative.io/edpresso/what-is-the-rsa-algorithm), [5](https://en.wikipedia.org/wiki/RSA_(cryptosystem)), [6](https://www.techtarget.com/searchsecurity/definition/RSA).
