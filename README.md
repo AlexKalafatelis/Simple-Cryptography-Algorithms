@@ -43,10 +43,10 @@ Additionally, in order to decrypt the plaintext, the inverse of the last 3 rules
 The RSA algorithm is an asymmetric cryptography algorithm, meaning that it uses a public (PU) and a private (PR) key (PU -> is shared publicly, PR -> is secret). The RSA algorithm is named after those who invented it in 1978, namely Ron **R**ivest, Adi **S**hamir, and Leonard **A**dleman. Moreover, the following steps highlight how it works:
 
 1. Generating the keys
- - Select two large prime numbers, xx and yy. The prime numbers need to be large so that they will be difficult for someone to figure out.
+ - Select two large prime numbers, x and y. The prime numbers need to be large so that they will be difficult for someone to figure out.
  - Calculate n = x x y
- - Calculate the totient function: φ(n) = (x-1)(y-1)
- - Select an integer e, such that e is co-prime to φ(n) and 1 < e < φ(n). The pair of numbers (n,e)(n,e) makes up the public key.
+ - Calculate the totient function: ϕ(n) = (x-1)(y-1)
+ - Select an integer e, such that e is co-prime to ϕ(n) and 1 < e < ϕ(n). The pair of numbers (n,e) makes up the public key.
  - Calculate d such that e.d = 1 mod ϕ(n).
  The pair (n,d) makes up the private key.
 
