@@ -1,7 +1,7 @@
 # Simple Cryptography Algorithms
 
 Analysis of basic cryptographic algoritms for a university course. 
-All code is written in MATLAB.
+The code is written mainly in MATLAB and in python.
 
 ## A. Ceasar's Cipher 
 
