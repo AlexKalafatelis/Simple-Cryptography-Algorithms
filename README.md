@@ -28,3 +28,21 @@ The Playfair cipher was the first practical digraph substitution cipher. The sch
 It was used for tactical purposes by British forces in the Second Boer War and in World War I and for the same purpose by the Australians during World War II. This was because Playfair is reasonably fast to use and requires no special equipment.
 
 https://www.geeksforgeeks.org/playfair-cipher-with-examples/
+
+Specifically, the Playfair cipher uses a 5x5 table containing a key word or phrase. 
+
+To generate the key table, one would first fill in the spaces in the table with the letters of the keyword, then fill the remaining spaces with the rest of the letters of the alphabet in order. The keyword together with the conventions for filling in the 5 by 5 table constitute the cipher key.
+
+Then, to encrypt a message, one would break the message into digrams (groups of 2 letters). These digrams will be substituted using the key table. Since encryption requires pairs of letters, messages with an odd number of characters usually append an uncommon letter, such as "X", to complete the final digram. To perform the substitution, the following 4 rules need to be applied in order this specific order, to each pair of letters in the plaintext:
+
+A. If both letters are the same (or only one letter is left), add an "X" after the first letter. Encrypt the new pair and continue. Some variants of Playfair use "Q" instead of "X", but any letter, itself uncommon as a repeated pair, will do.
+
+B. If the letters appear on the same row of your table, replace them with the letters to their immediate right respectively (wrapping around to the left side of the row if a letter in the original pair was on the right side of the row).
+
+C. If the letters appear on the same column of your table, replace them with the letters immediately below respectively (wrapping around to the top side of the column if a letter in the original pair was on the bottom side of the column).
+
+D. If the letters are not on the same row or column, replace them with the letters on the same row respectively but at the other pair of corners of the rectangle defined by the original pair. The order is important – the first letter of the encrypted pair is the one that lies on the same row as the first letter of the plaintext pair.
+
+Additionally, in order to decrypt the plaintext, the inverse of the last 3 rules is conducted, while the 1st rule is left as-is.
+
+For additional info, please read this: https://en.wikipedia.org/wiki/Playfair_cipher
